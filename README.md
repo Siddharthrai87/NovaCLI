@@ -1,131 +1,168 @@
-# 🚀 ProjectOpenClawClone
+# 🚀 NovaCLI
+
+> An AI-powered command-line application built with **TypeScript** and the **Bun runtime**, featuring interactive terminal experiences, intelligent workflows, and a modular architecture.
+
+---
 
 ## 📖 Overview
 
-**ProjectOpenClawClone** is a TypeScript-based application that demonstrates a modern approach to building command-line interfaces (CLIs) with AI integration. The project showcases how to create interactive console applications using **TypeScript** and the **Bun runtime**, while integrating powerful AI capabilities through modern SDKs.
+**NovaCLI** is a modern command-line application that showcases how AI can be seamlessly integrated into developer tools. Built with **TypeScript** and powered by the **Bun runtime**, it provides an interactive terminal interface while leveraging state-of-the-art AI models and web data retrieval for intelligent workflows.
+
+The project demonstrates scalable software architecture, type-safe development, and modern CLI design principles.
 
 ---
 
 ## ✨ Features
 
-- 🤖 **AI Integration**
-  - Uses `@mendable/firecrawl-js`
-  - Uses `@openrouter/ai-sdk-provider`
-  - Uses the `ai` package for AI-powered workflows
+### 🤖 AI-Powered Workflows
 
-- 💻 **Modern CLI Framework**
-  - Built with `@clack/core`
-  - Uses `@clack/prompts` for interactive command-line experiences
+- Integrates **OpenRouter AI SDK** for LLM capabilities
+- Uses **Firecrawl** for intelligent web content retrieval
+- Supports AI-driven command execution and responses
 
-- 🏗️ **Modular Architecture**
-  - Organized project structure for scalability and maintainability
+### 💻 Interactive Command Line Interface
 
-- 🛡️ **Type Safety**
-  - Fully developed with TypeScript 5.x
+- Built with **@clack/core**
+- Interactive prompts using **@clack/prompts**
+- Rich terminal output with colors and formatting
+- User-friendly command execution
+
+### 🏗️ Modular Architecture
+
+- Clean separation of concerns
+- Feature-based project structure
+- Easily extendable components
+- Maintainable and scalable codebase
+
+### 🛡️ Type Safety
+
+- Developed entirely in **TypeScript 5.x**
+- Strong typing for improved reliability
+- Better developer experience and maintainability
 
 ---
 
 # 📂 Project Structure
 
-```
-ProjectOpenClawClone/
+```text
+NovaCLI/
 │
 ├── index.ts                # Application entry point
-├── ai/                     # AI-related modules
-├── modes/                  # Different application modes
+├── ai/                     # AI modules and integrations
+├── modes/                  # Application modes
 ├── tui/                    # Text User Interface components
-├── yellow-landing/         # Landing interface/module
+├── yellow-landing/         # Landing interface
 │
+├── package.json            # Project configuration
 ├── tsconfig.json           # TypeScript configuration
 ├── bun.lock                # Bun dependency lock file
-└── package.json
+└── README.md
 ```
 
 ---
 
-## 🧩 Key Components
+# 🧩 Core Components
 
-### 1. Source Code
-
-| Component | Purpose |
-|----------|---------|
-| `index.ts` | Entry point of the application |
-| `ai/` | AI-related functionality |
-| `modes/` | Different operating modes |
-| `tui/` | Text User Interface components |
-| `yellow-landing/` | Dedicated interface/module |
+| Component | Description |
+|----------|-------------|
+| `index.ts` | Entry point and command initialization |
+| `ai/` | AI providers, prompts, and workflow logic |
+| `modes/` | Different operational modes |
+| `tui/` | Terminal UI and interactive components |
+| `yellow-landing/` | Landing interface and startup experience |
 
 ---
 
-### 2. Build Configuration
+# ⚙️ Technology Stack
 
-- Bun Runtime
+## Runtime
+
+- Bun
+
+## Language
+
 - TypeScript 5.x
-- CLI command parsing with `commander`
 
----
+## AI
 
-### 3. Development Dependencies
+- `@openrouter/ai-sdk-provider`
+- `ai`
+- `@mendable/firecrawl-js`
 
-#### Type Definitions
+## CLI
 
-- `@types/node`
-- `@types/marked-terminal`
-
-#### CLI & Terminal
-
+- `@clack/core`
+- `@clack/prompts`
 - `commander`
-- `chalk`
-- `figlet`
 
-#### Markdown & Utilities
+## Terminal UI
 
-- `marked`
-- `marked-terminal`
-- `diff`
+- chalk
+- figlet
+
+## Utilities
+
+- marked
+- marked-terminal
+- diff
 
 ---
 
-# ⚙️ Technical Highlights
+# 🚀 Technical Highlights
 
-### 🚀 Bun Runtime
+### ⚡ Bun Runtime
 
-Demonstrates familiarity with modern JavaScript runtimes beyond Node.js, providing faster package installation and execution.
-
-### 🏛️ Modular Architecture
-
-Uses a clean folder structure that separates responsibilities, making the project scalable and easier to maintain.
+Utilizes the Bun runtime for fast dependency installation, improved performance, and an efficient development workflow.
 
 ### 🤖 AI Integration
 
-Integrates modern AI tooling using:
+NovaCLI combines modern AI SDKs with web data retrieval to enable intelligent terminal-based interactions and automated workflows.
 
-- `@mendable/firecrawl-js`
-- `@openrouter/ai-sdk-provider`
-- `ai`
+### 💻 Interactive Terminal Experience
 
-to enable AI-powered workflows inside a CLI application.
+Provides an intuitive CLI with:
 
-### 💻 Interactive CLI Design
-
-Implements:
-
-- Command-line argument parsing
 - Interactive prompts
-- Console-based user interfaces
+- Command parsing
+- Styled console output
+- Responsive terminal interactions
 
-using modern CLI libraries.
+### 🏛️ Scalable Architecture
+
+The project follows a modular architecture that separates business logic, AI integrations, and user interface components, making future enhancements straightforward.
 
 ---
 
-# 🛠️ Development Experience
+# 🛠️ Development
 
-- Built entirely in **TypeScript (5.x+)**
-- Uses the **Bun** runtime
-- Modern package ecosystem
-- Production-ready project structure
-- Includes `.gitignore` for clean version control
-- Designed with maintainability and scalability in mind
+### Requirements
+
+- Bun
+- TypeScript 5.x
+
+### Install Dependencies
+
+```bash
+bun install
+```
+
+### Run the Application
+
+```bash
+bun run index.ts
+```
+
+---
+
+# 📈 Future Enhancements
+
+- Multi-agent AI workflows
+- Plugin architecture
+- Conversation history
+- Custom command extensions
+- Configuration profiles
+- Improved TUI experience
+- Additional AI provider support
 
 ---
 
@@ -135,21 +172,27 @@ Contributions are welcome!
 
 Please ensure that you:
 
-- Follow TypeScript coding standards
-- Add tests for new features
-- Update the documentation when required
+- Follow TypeScript best practices
+- Keep the architecture modular
+- Write clean, maintainable code
+- Update documentation when adding new features
 
 ---
 
-# 📈 Future Improvements
+# 🎯 Key Learning Outcomes
 
-- Add more CLI commands
-- Expand AI workflows
-- Improve Text User Interface (TUI)
-- Enhance overall developer experience
+This project demonstrates practical experience with:
+
+- TypeScript application development
+- Modern CLI design
+- AI SDK integration
+- Bun runtime ecosystem
+- Modular software architecture
+- Interactive terminal applications
+- Clean project organization
 
 ---
 
-# 🎯 Project Takeaway
+## 📄 License
 
-> **"ProjectOpenClawClone demonstrates the ability to build production-ready TypeScript applications with AI capabilities by leveraging modern tooling, clean architecture, and interactive CLI design."**
+This project is intended for educational and portfolio purposes.
