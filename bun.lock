@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "projectopenclawclone",
+      "name": "NovaCLI",
       "dependencies": {
         "@clack/core": "^1.4.1",
         "@clack/prompts": "^1.5.1",

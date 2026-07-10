@@ -1,10 +1,15 @@
 {
-  "name": "projectopenclawclone",
+  "name": "NovaCLI",
+  "version": "1.0.0",
+  "description": "An AI-powered command-line application built with TypeScript and Bun.",
   "module": "index.ts",
   "type": "module",
   "private": true,
   "bin": {
-    "projectopenclawclone": "./index.ts"
+    "NovaCLI": "./index.ts"
+  },
+  "scripts": {
+    "start": "bun run index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"

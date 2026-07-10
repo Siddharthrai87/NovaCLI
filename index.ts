@@ -1,8 +1,8 @@
 #!/usr/bin/env bun
 /* 
 this is shebang it tells that it is being run by bun.
-using this reduce bun index.ts wakeup to projectopenclawclone wakeup
-but we are required to create a bin that will create a terminal of command named projectopenclawclone and when someone runs it it execute
+using this reduce bun index.ts wakeup to NovaCLI wakeup
+but we are required to create a bin that will create a terminal of command named NovaCLI and when someone runs it it execute
 ./index.ts
 
 bun link :- register the project globally as a cli tool if not link it will work only in project
