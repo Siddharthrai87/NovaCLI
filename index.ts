@@ -13,8 +13,8 @@ import { runwakeup } from "./tui/wakeup";
  const program = new Command();
 
  program
-    .name("TerminalAI")
-    .description("Sid codeClaw project")
+    .name("NovaCLI")
+    .description("An AI-powered command-line application built with TypeScript and Bun.")
     .version("0.0.1");
 
 program.command("wakeup")

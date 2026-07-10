@@ -27,9 +27,9 @@ function printBannerWithShadow(ascii: string) {
 export async function runwakeup() {
     let ascii:string;
     try{
-        ascii=figlet.textSync("clawBySiddharth",{ font:BANNER_FONT})
+        ascii=figlet.textSync("NovaCLI",{ font:BANNER_FONT})
     }catch(error){
-        ascii=figlet.textSync("clawBySiddharth",{ font:"standard"})
+        ascii=figlet.textSync("NovaCLI",{ font:"standard"})
     }
     printBannerWithShadow(ascii);
 
