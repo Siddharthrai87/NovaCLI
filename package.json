@@ -1,12 +1,12 @@
 {
-  "name": "NovaCLI",
+  "name": "@siddharth_rai87/novacli",
   "version": "1.0.0",
   "description": "An AI-powered command-line application built with TypeScript and Bun.",
   "module": "index.ts",
   "type": "module",
-  "private": true,
+  "private": false,
   "bin": {
-    "NovaCLI": "./index.ts"
+    "novacli": "bin/novacli.js"
   },
   "scripts": {
     "start": "bun run index.ts"
@@ -29,7 +29,7 @@
     "commander": "^15.0.0",
     "diff": "^9.0.0",
     "figlet": "^1.11.0",
-    "marked": "^18.0.5",
+    "marked": "^15.0.12",
     "marked-terminal": "^7.3.0",
     "telegraf": "^4.16.3"
   }

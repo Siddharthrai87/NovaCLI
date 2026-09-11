@@ -13,9 +13,9 @@ import { runwakeup } from "./tui/wakeup";
  const program = new Command();
 
  program
-    .name("NovaCLI")
+    .name("novacli")
     .description("An AI-powered command-line application built with TypeScript and Bun.")
-    .version("0.0.1");
+    .version("1.0.0");
 
 program.command("wakeup")
        .description("show the banner and pick cli or telgram mode")
